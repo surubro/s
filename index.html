@@ -4,299 +4,347 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Portfolio</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =========================================
+           1. MODERN BASE STYLES
+           ========================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #f8fafc;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            color: #38bdf8;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+
+        /* =========================================
+           2. SEARCH BAR UI
+           ========================================= */
+        .search-container {
+            position: sticky;
+            top: 1rem;
+            z-index: 100;
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            color: #ffffff;
+            outline: none;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .search-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .search-input:focus {
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+        }
+
+        /* =========================================
+           3. BUTTON & CARD GRID LAYOUT
+           ========================================= */
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .card-link {
+            text-decoration: none;
+        }
+
+        .card-button {
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+        }
+
+        .card-button:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+            border-color: #38bdf8;
+        }
+
+        /* Hide elements when filtered out */
+        .card-link.hidden {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Cloud Storage</h1>
-
-    <a href="https://github.com/surubro/s/edit/main/index.html" target="_blank">
-        <button>edit s.html</button>
-    </a>
-
-    <a href="https://surubro.github.io/mspend.html" target="_blank">
-        <button>edit Total Spend ₹</button>
-    </a>
-
-    <a href="https://surubro.github.io/app" target="_blank">
-        <button>‎ ‎ ‎ ‎ ‎  HTML Apps ‎ ‎ ‎ ‎ ‎ </button>
-    </a>
-
-    <a href="http://35.208.200.11:39247/" target="_blank">
-        <button>File Server</button>
-    </a>
-
-    <a href="https://surendra404.online/" target="_blank">
-        <button>File Server domain</button>
-    </a>
-
-    <a href="http://35.208.200.11:39247/aayush/" target="_blank">
-        <button>File Server aayush</button>
-    </a>
-
-    
-    
-
-    <a href="https://drive.google.com/drive/folders/1H9IZTXhE4iU0pDIPOi0T_1xIIfUj7NY-" target="_blank">
-        <button>Gdrive</button>
-    </a>
-
-    <a href="https://github.com/surubro/private-drive" target="_blank">
-        <button>Git private</button>
-    </a>
-
-    <a href="https://github.com/surubro/auto-clone/tree/main/MD-Files" target="_blank">
-        <button>Auto Clone MD Files</button>
-    </a>
-
-    <a href="https://github.com/surubro/private-drive/tree/main/notgit-copy" target="_blank">
-        <button>edit notgit sourcecode</button>
-    </a>
-
-    
-
-    <a href="https://1drv.ms/f/c/84f27689ea16768a/Ej5RIoLxn3dKsji4llCbtW8BKvDVglk_qBLcl0urGHhkLQ" target="_blank">
-        <button>Onedrive</button>
-    </a>
-
-    <a href="https://www.dropbox.com/scl/fo/4au73i9ojzrnxss9l02xa/AKY4jDPq_ys_JS2rmmUH40c?rlkey=e2d34337u30e0zbvovffvtilf&st=2f2bqxuz&dl=0" target="_blank">
-        <button>Dropbox</button>
-    </a>
-
-    <a href="https://mega.nz/folder/aup0HLwC#kgSunNtW2FpiydWzswTzDw" target="_blank">
-        <button>Mega</button>
-    </a>
-
-    <a href="https://androidfilehost.com/?a=show&w=files&flid=318982" target="_blank">
-        <button>A file Host</button>
-    </a>
-
-    <a href="https://sourceforge.net/projects/red-dragon-recovery-project/" target="_blank">
-        <button>Sourceforge</button>
-    </a>
-
-    
-
-    <a href="https://surubro.github.io/app/cal.html" target="_blank">
-        <button>Calculator Apps</button>
-    </a>
-
-    <a href="https://www.calculator.net/basic-calculator.html" target="_blank">
-        <button>Calculator Online HTML</button>
-    </a>
-
-    <a href="https://surubro.github.io/app/other-links.html" target="_blank">
-        <button>Other Links</button>
-    </a>
-
-    
-
-    <a href=" https://surubro.github.io/app/input-2fa" target="_blank">
-        <button>authy TOTP</button>
-    </a>
-
-    <a href=" https://surubro.github.io/electronics" target="_blank">
-        <button>electronics</button>
-    </a>
-
-    <a href="https://surubro.github.io/app/utilitybill.html" target="_blank">
-        <button>Utility payment</button>
-    </a>
-    
-
-  
-
-
-    
-
-    <h1>=................................................................................=</h1>
-     <h2>Apps firebase</h2>
-
-    <a href="https://surubro.github.io/text/" target="_blank">
-        <button>Edit & Text Save</button>
-    </a>
-
-
-      <a href="https://surubro.github.io/permanent-chat.html" target="_blank">
-        <button>Send Permanent</button>
-    </a>
-
-    <a href="https://Surubro.github.io/dchat2.html" target="_blank">
-        <button>Send Temporary</button>
-    </a>
-
-     <a href="  https://surubro.github.io/save-links.html" target="_blank">
-        <button> ‎ ‎ ‎Save links ‎ ‎ ‎</button>
-    </a>
-
-     <a href=" https://surubro.github.io/app/sms-storage.html" target="_blank">
-        <button>  phone SMS‎ ‎</button>
-    </a>
-
-    <a href="https://Surubro.github.io/task.html" target="_blank">
-        <button>Task</button>
-    </a>
-
-    <a href="https://surubro.github.io/clear.html" target="_blank">
-        <button>Clear Chat</button>
-    </a>
-
-    <a href="https://surubro.github.io/app/thoughts.html" target="_blank">
-        <button>good Thoughts</button>
-    </a>
-
-    <a href="https://surubro.github.io/app/financial-advice.html" target="_blank">
-        <button>financial-advice</button>
-    </a>
-
-    
-    <a href="https://surubro.github.io/app/advice-2.html" target="_blank">
-        <button>advice 2</button>
-    </a>
-
-    
-
-    
-
-    <a href="http://35.208.200.11:39247/f/msg/" target="_blank">
-        <button> apache json save text</button>
-    </a>
-
-
-    
-
-    <h2>=................................................................................=</h2>
-
-
-    <a href="https://surendra-ravindra-sonawane.blogspot.com/" target="_blank">
-        <button>Personal Blogspot</button>
-    </a>
-
-    <a href="https://surubro.github.io" target="_blank">
-        <button>My Website</button>
-    </a>
-
-    <a href="https://github.com/surubro?tab=repositories" target="_blank">
-        <button>My Repositories</button>
-    </a>
-
-    <a href="https://github.com/surubro/surubro.github.io" target="_blank">
-        <button>Surubro Sourcecode</button>
-    </a>
-
-  
-
-
-    
-  
-
-    
-
-    <a href="https://joshmovies.com/" target="_blank">
-        <button>Hind Movies</button>
-    </a>
-
-    <a href="https://hindmovie.ltd/" target="_blank">
-        <button>Hind Movies Original</button>
-    </a>
-
-    <a href="https://surubro.github.io/wifi.html" target="_blank">
-        <button>Wifi</button>
-    </a>
-
-    <a href="https://surubro.github.io/chat.html" target="_blank">
-        <button>Chat App</button>
-    </a>
-
-    <a href="https://surubro.github.io/telebot.html" target="_blank">
-        <button>Telebot</button>
-    </a>
-
-    <a href="https://dashboard.ngrok.com/endpoints" target="_blank">
-        <button>Endpoints</button>
-    </a>
-
-    <a href="https://github.com/surubro/anime/edit/main/Anime-list.txt" target="_blank">
-        <button>Anime List</button>
-    </a>
-
-    <h1>Text</h1>
-    <h1>=................................................................................=</h1>
-
-    <a href="https://surubro.github.io/con.txt" target="_blank">
-        <button>CON</button>
-    </a>
-
-    <a href="https://github.com/surubro/surubro.github.io/edit/master/con.txt" target="_blank">
-        <button>CON Edit</button>
-    </a>
-
-    <a href="https://surubro.github.io/text.txt" target="_blank">
-        <button>TEXT</button>
-    </a>
-
-    <a href="https://github.com/surubro/surubro.github.io/edit/master/text.txt" target="_blank">
-        <button>TEXT Edit</button>
-    </a>
-
-    
-    <a href="https://surubro.github.io/text/textline.html" target="_blank">
-        <button>Text Line</button>
-    </a>
-
-    <a href="https://surubro.github.io/tele.html" target="_blank">
-        <button>Tele</button>
-    </a>
-
-    <a href="https://node-server-rxbu.onrender.com/" target="_blank">
-        <button>Node.js Server</button>
-    </a>
-
-    <a href="https://github.com/surubro/private-drive/edit/main/salary.txt" target="_blank">
-        <button>Sal Protocol</button>
-    </a>
-
-    <a href="https://raw.githubusercontent.com/surubro/surubro.github.io/refs/heads/master/date.txt" target="_blank">
-        <button>DATE</button>
-    </a>
-
-    <a href="http://35.208.200.11/f/chat-record/" target="_blank">
-        <button>PHP Chat Record</button>
-    </a>
-
-    <a href="https://surubro.github.io/app/nfc-image.html" target="_blank">
-        <button>nfc card pay</button>
-    </a>
-
-     <a href="https://surubro.github.io/job-checkin.html" target="_blank">
-        <button>job check in & out</button>
-    </a>
-
-    <a href="https://surubro.github.io/app/Russian-eng" target="_blank">
-        <button>Russian language</button>
-    </a>
-
-    <a href="    https://yum.quixy.com/guestrecord/05082024-144642453-3f0c9ed9-cd62-47e9-b82b-5707efe76465
-" target="_blank">
-        <button>OJ.......</button>
-    </a>
-
-    <a href="https://my.jiopc.in" target="_blank">
-        <button>OJ.......</button>
-    </a>
-
-    
-
-
-
-
-
-
-    
-    
-
-   
-
-  
+    <div class="container">
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search links & apps..." onkeyup="filterLinks()">
+        </div>
+
+        <!-- Section 1: Cloud Storage -->
+        <h1>Cloud Storage</h1>
+        <div class="grid-section">
+            <a href="https://github.com/surubro/s/edit/main/index.html" target="_blank" class="card-link">
+                <button class="card-button">edit s.html</button>
+            </a>
+            <a href="https://surubro.github.io/mspend.html" target="_blank" class="card-link">
+                <button class="card-button">edit Total Spend ₹</button>
+            </a>
+            <a href="https://surubro.github.io/app" target="_blank" class="card-link">
+                <button class="card-button">HTML Apps</button>
+            </a>
+            <a href="http://35.208.200.11:39247/" target="_blank" class="card-link">
+                <button class="card-button">File Server</button>
+            </a>
+            <a href="https://surendra404.online/" target="_blank" class="card-link">
+                <button class="card-button">File Server domain</button>
+            </a>
+            <a href="http://35.208.200.11:39247/aayush/" target="_blank" class="card-link">
+                <button class="card-button">File Server aayush</button>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1H9IZTXhE4iU0pDIPOi0T_1xIIfUj7NY-" target="_blank" class="card-link">
+                <button class="card-button">Gdrive</button>
+            </a>
+            <a href="https://github.com/surubro/private-drive" target="_blank" class="card-link">
+                <button class="card-button">Git private</button>
+            </a>
+            <a href="https://github.com/surubro/auto-clone/tree/main/MD-Files" target="_blank" class="card-link">
+                <button class="card-button">Auto Clone MD Files</button>
+            </a>
+            <a href="https://github.com/surubro/private-drive/tree/main/notgit-copy" target="_blank" class="card-link">
+                <button class="card-button">edit notgit sourcecode</button>
+            </a>
+            <a href="https://1drv.ms/f/c/84f27689ea16768a/Ej5RIoLxn3dKsji4llCbtW8BKvDVglk_qBLcl0urGHhkLQ" target="_blank" class="card-link">
+                <button class="card-button">Onedrive</button>
+            </a>
+            <a href="https://www.dropbox.com/scl/fo/4au73i9ojzrnxss9l02xa/AKY4jDPq_ys_JS2rmmUH40c?rlkey=e2d34337u30e0zbvovffvtilf&st=2f2bqxuz&dl=0" target="_blank" class="card-link">
+                <button class="card-button">Dropbox</button>
+            </a>
+            <a href="https://mega.nz/folder/aup0HLwC#kgSunNtW2FpiydWzswTzDw" target="_blank" class="card-link">
+                <button class="card-button">Mega</button>
+            </a>
+            <a href="https://androidfilehost.com/?a=show&w=files&flid=318982" target="_blank" class="card-link">
+                <button class="card-button">A file Host</button>
+            </a>
+            <a href="https://sourceforge.net/projects/red-dragon-recovery-project/" target="_blank" class="card-link">
+                <button class="card-button">Sourceforge</button>
+            </a>
+            <a href="https://surubro.github.io/app/cal.html" target="_blank" class="card-link">
+                <button class="card-button">Calculator Apps</button>
+            </a>
+            <a href="https://www.calculator.net/basic-calculator.html" target="_blank" class="card-link">
+                <button class="card-button">Calculator Online HTML</button>
+            </a>
+            <a href="https://surubro.github.io/app/other-links.html" target="_blank" class="card-link">
+                <button class="card-button">Other Links</button>
+            </a>
+            <a href="https://surubro.github.io/app/input-2fa" target="_blank" class="card-link">
+                <button class="card-button">authy TOTP</button>
+            </a>
+            <a href="https://surubro.github.io/electronics" target="_blank" class="card-link">
+                <button class="card-button">electronics</button>
+            </a>
+            <a href="https://surubro.github.io/app/utilitybill.html" target="_blank" class="card-link">
+                <button class="card-button">Utility payment</button>
+            </a>
+        </div>
+
+        <!-- Section 2: Firebase Apps -->
+        <h2>Apps Firebase</h2>
+        <div class="grid-section">
+            <a href="https://surubro.github.io/text/" target="_blank" class="card-link">
+                <button class="card-button">Edit & Text Save</button>
+            </a>
+            <a href="https://surubro.github.io/permanent-chat.html" target="_blank" class="card-link">
+                <button class="card-button">Send Permanent</button>
+            </a>
+            <a href="https://Surubro.github.io/dchat2.html" target="_blank" class="card-link">
+                <button class="card-button">Send Temporary</button>
+            </a>
+            <a href="https://surubro.github.io/save-links.html" target="_blank" class="card-link">
+                <button class="card-button">Save links</button>
+            </a>
+            <a href="https://surubro.github.io/app/sms-storage.html" target="_blank" class="card-link">
+                <button class="card-button">phone SMS</button>
+            </a>
+            <a href="https://Surubro.github.io/task.html" target="_blank" class="card-link">
+                <button class="card-button">Task</button>
+            </a>
+            <a href="https://surubro.github.io/clear.html" target="_blank" class="card-link">
+                <button class="card-button">Clear Chat</button>
+            </a>
+            <a href="https://surubro.github.io/app/thoughts.html" target="_blank" class="card-link">
+                <button class="card-button">good Thoughts</button>
+            </a>
+            <a href="https://surubro.github.io/app/financial-advice.html" target="_blank" class="card-link">
+                <button class="card-button">financial-advice</button>
+            </a>
+            <a href="https://surubro.github.io/app/advice-2.html" target="_blank" class="card-link">
+                <button class="card-button">advice 2</button>
+            </a>
+            <a href="http://35.208.200.11:39247/f/msg/" target="_blank" class="card-link">
+                <button class="card-button">apache json save text</button>
+            </a>
+        </div>
+
+        <!-- Section 3: Web & Repos -->
+        <h2>Websites & Repositories</h2>
+        <div class="grid-section">
+            <a href="https://surendra-ravindra-sonawane.blogspot.com/" target="_blank" class="card-link">
+                <button class="card-button">Personal Blogspot</button>
+            </a>
+            <a href="https://surubro.github.io" target="_blank" class="card-link">
+                <button class="card-button">My Website</button>
+            </a>
+            <a href="https://github.com/surubro?tab=repositories" target="_blank" class="card-link">
+                <button class="card-button">My Repositories</button>
+            </a>
+            <a href="https://github.com/surubro/surubro.github.io" target="_blank" class="card-link">
+                <button class="card-button">Surubro Sourcecode</button>
+            </a>
+            <a href="https://joshmovies.com/" target="_blank" class="card-link">
+                <button class="card-button">Hind Movies</button>
+            </a>
+            <a href="https://hindmovie.ltd/" target="_blank" class="card-link">
+                <button class="card-button">Hind Movies Original</button>
+            </a>
+            <a href="https://surubro.github.io/wifi.html" target="_blank" class="card-link">
+                <button class="card-button">Wifi</button>
+            </a>
+            <a href="https://surubro.github.io/chat.html" target="_blank" class="card-link">
+                <button class="card-button">Chat App</button>
+            </a>
+            <a href="https://surubro.github.io/telebot.html" target="_blank" class="card-link">
+                <button class="card-button">Telebot</button>
+            </a>
+            <a href="https://dashboard.ngrok.com/endpoints" target="_blank" class="card-link">
+                <button class="card-button">Endpoints</button>
+            </a>
+            <a href="https://github.com/surubro/anime/edit/main/Anime-list.txt" target="_blank" class="card-link">
+                <button class="card-button">Anime List</button>
+            </a>
+        </div>
+
+        <!-- Section 4: Text Files & Utilities -->
+        <h1>Text & Utilities</h1>
+        <div class="grid-section">
+            <a href="https://surubro.github.io/con.txt" target="_blank" class="card-link">
+                <button class="card-button">CON</button>
+            </a>
+            <a href="https://github.com/surubro/surubro.github.io/edit/master/con.txt" target="_blank" class="card-link">
+                <button class="card-button">CON Edit</button>
+            </a>
+            <a href="https://surubro.github.io/text.txt" target="_blank" class="card-link">
+                <button class="card-button">TEXT</button>
+            </a>
+            <a href="https://github.com/surubro/surubro.github.io/edit/master/text.txt" target="_blank" class="card-link">
+                <button class="card-button">TEXT Edit</button>
+            </a>
+            <a href="https://surubro.github.io/text/textline.html" target="_blank" class="card-link">
+                <button class="card-button">Text Line</button>
+            </a>
+            <a href="https://surubro.github.io/tele.html" target="_blank" class="card-link">
+                <button class="card-button">Tele</button>
+            </a>
+            <a href="https://node-server-rxbu.onrender.com/" target="_blank" class="card-link">
+                <button class="card-button">Node.js Server</button>
+            </a>
+            <a href="https://github.com/surubro/private-drive/edit/main/salary.txt" target="_blank" class="card-link">
+                <button class="card-button">Sal Protocol</button>
+            </a>
+            <a href="https://raw.githubusercontent.com/surubro/surubro.github.io/refs/heads/master/date.txt" target="_blank" class="card-link">
+                <button class="card-button">DATE</button>
+            </a>
+            <a href="http://35.208.200.11/f/chat-record/" target="_blank" class="card-link">
+                <button class="card-button">PHP Chat Record</button>
+            </a>
+            <a href="https://surubro.github.io/app/nfc-image.html" target="_blank" class="card-link">
+                <button class="card-button">nfc card pay</button>
+            </a>
+            <a href="https://surubro.github.io/job-checkin.html" target="_blank" class="card-link">
+                <button class="card-button">job check in & out</button>
+            </a>
+            <a href="https://surubro.github.io/app/Russian-eng" target="_blank" class="card-link">
+                <button class="card-button">Russian language</button>
+            </a>
+            <a href="https://yum.quixy.com/guestrecord/05082024-144642453-3f0c9ed9-cd62-47e9-b82b-5707efe76465" target="_blank" class="card-link">
+                <button class="card-button">OJ.......</button>
+            </a>
+            <a href="https://my.jiopc.in" target="_blank" class="card-link">
+                <button class="card-button">OJ.......</button>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Simple Search Script for Beginners -->
+    <script>
+        function filterLinks() {
+            // Get user input and convert to lowercase
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            // Select all link containers
+            const links = document.querySelectorAll('.card-link');
+
+            links.forEach(link => {
+                // Get the text inside the button
+                const buttonText = link.textContent.toLowerCase();
+                
+                // Show link if search term matches button text, otherwise hide
+                if (buttonText.includes(input)) {
+                    link.classList.remove('hidden');
+                } else {
+                    link.classList.add('hidden');
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
